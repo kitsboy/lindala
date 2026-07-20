@@ -1,0 +1,24 @@
+# WordPress / dump waste (never re-add)
+*.zip
+_wp-extract/
+well-known/
+et-cache/
+wp-content/
+wp-includes/
+wp-admin/
+wp-*.php
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Node
+node_modules/
+.npm/
+
+# Env
+.env
+.env.*

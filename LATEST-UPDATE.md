@@ -1,3 +1,3 @@
-# lindala — Last Updated 2026-07-19 by Grok
-Brief: Thin Satohash API client (lindala) — stamp/health/verify helpers, graceful offline
-Commit: c6c2fa5d6ac5f6389b6ad79f9dead7a5fe4019c2
+# lindala — Last Updated 2026-07-20 by Grok
+Brief: v1 static portfolio tidy — WP zips/extract removed, site/ is the product
+Commit: (uncommitted — pending review)

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robin William Lindala — Cinematographer</title>
+  <meta name="description" content="Robin William Lindala is a cinematographer and Director of Photography whose work includes A Million Little Things, Wu Assassins, and Van Helsing." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="logo" href="#top">RWL</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#reels">Reels</a>
+      <a href="#stills">Stills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media">
+        <img
+          src="images/hero/hallway-blue.jpg"
+          alt="Cinematic still — blue-lit corridor"
+          class="hero-img is-active"
+          data-hero="0"
+          fetchpriority="high"
+        />
+        <img
+          src="images/hero/van-helsing-deck.jpg"
+          alt="Cinematic still — Van Helsing"
+          class="hero-img"
+          data-hero="1"
+        />
+        <img
+          src="images/work/wu-mcleavy.jpg"
+          alt="Cinematic still — Wu Assassins"
+          class="hero-img"
+          data-hero="2"
+        />
+        <img
+          src="images/stills/sc-v2d.jpg"
+          alt="Cinematic production still"
+          class="hero-img"
+          data-hero="3"
+        />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Director of Photography</p>
+        <h1>Robin William<br />Lindala</h1>
+        <p class="hero-tagline">Storytelling through light, shape, and silence.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#reels">Watch Reels</a>
+          <a class="btn btn-ghost" href="pdf/LINDALA-Robin-DP.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#work" aria-label="Scroll to work">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section work" id="work">
+      <div class="section-head">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Credits that frame the story</h2>
+      </div>
+
+      <article class="credit credit--feature">
+        <div class="credit-visual">
+          <img src="images/posters/amlt.jpg" alt="A Million Little Things poster" loading="lazy" />
+        </div>
+        <div class="credit-copy">
+          <p class="credit-meta">ABC · Drama Series</p>
+          <h3>A Million Little Things</h3>
+          <p>
+            Director of Photography on the acclaimed ABC drama. Intimate character work,
+            warm palette control, and emotional framing that holds the space between people.
+          </p>
+          <div class="credit-tags">
+            <span>Series DP</span>
+            <span>Drama</span>
+            <span>Vancouver</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="credit-grid">
+        <article class="credit-card" data-project="wu">
+          <div class="credit-card-media">
+            <img src="images/work/wu-1.jpg" alt="Wu Assassins still" loading="lazy" />
+            <img src="images/work/wu-durand.jpg" alt="Kevin Durand — Wu Assassins" loading="lazy" class="swap" />
+          </div>
+          <div class="credit-card-body">
+            <p class="credit-meta">Netflix · Action</p>
+            <h3>Wu Assassins</h3>
+            <p>High-contrast martial energy, neon nights, and kinetic camera language.</p>
+          </div>
+        </article>
+
+        <article class="credit-card" data-project="vh">
+          <div class="credit-card-media">
+            <img src="images/work/vh-3.jpg" alt="Van Helsing still" loading="lazy" />
+            <img src="images/work/vh-vampires.jpg" alt="Van Helsing vampires" loading="lazy" class="swap" />
+          </div>
+          <div class="credit-card-body">
+            <p class="credit-meta">Syfy · Horror</p>
+            <h3>Van Helsing</h3>
+            <p>Gothic dread, crushed blacks, and atmospheric world-building.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Project galleries -->
+      <div class="project-gallery" id="gallery-wu" hidden>
+        <div class="project-gallery-head">
+          <h3>Wu Assassins — Stills</h3>
+          <button type="button" class="close-gallery" data-close="wu" aria-label="Close gallery">×</button>
+        </div>
+        <div class="masonry">
+          <figure><img src="images/work/wu-1.jpg" alt="Wu Assassins" loading="lazy" data-full="images/work/wu-1.jpg" /></figure>
+          <figure><img src="images/work/wu-2.jpg" alt="Wu Assassins" loading="lazy" data-full="images/work/wu-2.jpg" /></figure>
+          <figure><img src="images/work/wu-durand.jpg" alt="Kevin Durand" loading="lazy" data-full="images/work/wu-durand.jpg" /></figure>
+          <figure><img src="images/work/wu-flanagan.jpg" alt="Tommy Flanagan" loading="lazy" data-full="images/work/wu-flanagan.jpg" /></figure>
+          <figure><img src="images/work/wu-mcleavy.jpg" alt="Robin McLeavy" loading="lazy" data-full="images/work/wu-mcleavy.jpg" /></figure>
+          <figure><img src="images/work/wu-lijunli.jpg" alt="Li Jun Li" loading="lazy" data-full="images/work/wu-lijunli.jpg" /></figure>
+        </div>
+      </div>
+
+      <div class="project-gallery" id="gallery-vh" hidden>
+        <div class="project-gallery-head">
+          <h3>Van Helsing — Stills</h3>
+          <button type="button" class="close-gallery" data-close="vh" aria-label="Close gallery">×</button>
+        </div>
+        <div class="masonry">
+          <figure><img src="images/work/vh-3.jpg" alt="Van Helsing" loading="lazy" data-full="images/work/vh-3.jpg" /></figure>
+          <figure><img src="images/work/vh-2.jpg" alt="Van Helsing" loading="lazy" data-full="images/work/vh-2.jpg" /></figure>
+          <figure><img src="images/work/vh-1.jpg" alt="Van Helsing" loading="lazy" data-full="images/work/vh-1.jpg" /></figure>
+          <figure><img src="images/work/vh-scarfe.jpg" alt="Jonathan Scarfe" loading="lazy" data-full="images/work/vh-scarfe.jpg" /></figure>
+          <figure><img src="images/work/vh-vampires.jpg" alt="Vampires" loading="lazy" data-full="images/work/vh-vampires.jpg" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REELS -->
+    <section class="section reels" id="reels">
+      <div class="section-head">
+        <p class="eyebrow">Demo Reels</p>
+        <h2>See the work move</h2>
+      </div>
+      <div class="reels-grid">
+        <article class="reel">
+          <h3>Dramatic Reel</h3>
+          <div class="video-wrap">
+            <iframe
+              title="Robin Lindala — Dramatic Demo Reel"
+              src="https://player.vimeo.com/video/796873094?dnt=1&title=0&byline=0&portrait=0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+        <article class="reel">
+          <h3>Action Reel</h3>
+          <div class="video-wrap">
+            <iframe
+              title="Robin Lindala — Action Demo Reel"
+              src="https://player.vimeo.com/video/796870121?dnt=1&title=0&byline=0&portrait=0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STILLS STRIP -->
+    <section class="section stills" id="stills">
+      <div class="section-head">
+        <p class="eyebrow">Frame Grabs</p>
+        <h2>Light as language</h2>
+      </div>
+      <div class="stills-track" id="stills-track">
+        <figure class="still"><img src="images/stills/sc-v2d.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-v2d.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-23.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-23.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-13a.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-13a.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-a39.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-a39.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-36b.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-36b.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-a17.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-a17.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-11.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-11.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-17.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-17.jpg" /></figure>
+        <figure class="still"><img src="images/stills/sc-a39b.jpg" alt="Production still" loading="lazy" data-full="images/stills/sc-a39b.jpg" /></figure>
+        <figure class="still"><img src="images/work/vh-scarfe.jpg" alt="Van Helsing still" loading="lazy" data-full="images/work/vh-scarfe.jpg" /></figure>
+        <figure class="still"><img src="images/work/wu-flanagan.jpg" alt="Wu Assassins still" loading="lazy" data-full="images/work/wu-flanagan.jpg" /></figure>
+      </div>
+      <p class="stills-hint">Click any frame to expand · drag or scroll sideways</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-grid">
+        <div class="about-portrait">
+          <img src="images/portrait.jpg" alt="Robin William Lindala" loading="lazy" />
+          <div class="about-portrait-frame" aria-hidden="true"></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>A lifetime looking through the lens</h2>
+          <p>
+            From a very young age Robin Lindala began his lifelong journey with photography.
+            He fell in love with the art of storytelling through images and, once he picked up
+            a camera, developed a deep passion for shape, form, space, lighting, and composition.
+          </p>
+          <p>
+            After studying Fine Art Photography at Fanshawe College and graduating at the top
+            of his class (just don’t ask his classmates), Robin continued to compose, shoot, and
+            capture photographic images and filmic sequences across feature films and television.
+          </p>
+          <p>
+            His calm demeanour and definitive communication style create an efficient, comfortable
+            working environment for entire production crews. As Director of Photography he inspires
+            crews and motivates casts with principled leadership, diplomacy, and a unique sense of
+            humour — always serving the director’s vision.
+          </p>
+          <p>
+            For more than twenty years he has contributed an accomplished body of work in camera
+            departments worldwide. He currently resides in Vancouver, Canada — although his
+            neighbours wish he didn’t.
+          </p>
+          <a class="btn btn-primary" href="pdf/LINDALA-Robin-DP.pdf" target="_blank" rel="noopener">Download full CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-panel">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s make something worth watching</h2>
+        <p class="contact-lead">
+          Available for series, features, and commercial work.
+          Based in Vancouver · works worldwide.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hello@lindalaconspiracy.com">Email Robin</a>
+          <a class="btn btn-ghost" href="https://lindalaconspiracy.com" target="_blank" rel="noopener">lindalaconspiracy.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Robin William Lindala</p>
+    <p class="footer-note">Cinematographer · Director of Photography</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" aria-label="Close">×</button>
+    <button type="button" class="lightbox-nav prev" aria-label="Previous">‹</button>
+    <img src="" alt="" class="lightbox-img" />
+    <button type="button" class="lightbox-nav next" aria-label="Next">›</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
