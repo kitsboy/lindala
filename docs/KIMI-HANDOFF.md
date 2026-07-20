@@ -75,3 +75,28 @@ docs/     → deploy + handoffs
 - Clean working tree pending commit of site + docs (user has not requested push)
 
 ---
+
+## Latest Session Summary (from 2026-07-20 goodbye)
+
+**Chat Topic:** WordPress mess → clean static v1 cinematographer portfolio for Robin Lindala; staged on GitHub only.
+
+**Finished in this session:**
+- Curated media + built `site/` portfolio (hero, AMLT/Wu/VH work, Vimeo reels, stills, bio, CV)
+- Deleted zips + `_wp-extract/` (~990MB waste)
+- Repo tidy as v1.0.0; README + DEPLOYMENT docs
+- Pushed to `origin/main` (no Cloudflare deploy)
+
+**Still to do:**
+- Design/content revisions
+- Confirm contact email / agent / IMDb
+- Cloudflare Pages later (`site/` root, no build)
+- Domain cutover when ready
+
+**Git State:**
+- SHA: `641e6f8` (docs) / feature `a55e50e`
+- Unpushed: none (after this goodbye commit)
+- Repo: https://github.com/kitsboy/lindala
+
+**Next for Kimi:** Note lindala is now a real static site under `site/`, not docs-only. Stage only — no prod URL yet. Integrate into vault/Kanban when ready.
+
+---
