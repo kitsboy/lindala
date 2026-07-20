@@ -1,3 +1,3 @@
 # lindala — Last Updated 2026-07-19 by Grok
 Brief: Thin Satohash API client (lindala) — stamp/health/verify helpers, graceful offline
-Commit: 476821a14c8147cc2dfe9b795b9e63dcd6b82a7f
+Commit: afe5ea3453d9fb8f350f2bf1024a2ab013f05083
