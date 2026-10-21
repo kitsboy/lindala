@@ -176,4 +176,44 @@
   } else {
     revealTargets.forEach((el) => el.classList.add("is-visible"));
   }
+
+  /* ── Agent contact card (collapsible, remembers choice) ── */
+  const agentCard = $("#agent-card");
+  const agentToggle = $("#agent-card-toggle");
+  if (agentCard && agentToggle) {
+    const KEY = "lindala:agent-card";
+
+    const applyState = (collapsed) => {
+      agentCard.classList.toggle("is-collapsed", collapsed);
+      agentToggle.setAttribute("aria-expanded", String(!collapsed));
+    };
+
+    let collapsed = true;
+    try {
+      const stored = localStorage.getItem(KEY);
+      if (stored === "open") collapsed = false;
+      else if (stored === "closed") collapsed = true;
+    } catch (e) {
+      /* private mode / storage blocked — keep the compact default */
+    }
+    applyState(collapsed);
+
+    agentToggle.addEventListener("click", () => {
+      const next = !agentCard.classList.contains("is-collapsed");
+      applyState(next);
+      try {
+        localStorage.setItem(KEY, next ? "closed" : "open");
+      } catch (e) {
+        /* ignore */
+      }
+      // When the card sits in the page flow (small screens), keep the opened card in view.
+      if (
+        !next &&
+        getComputedStyle(agentCard).position === "static" &&
+        typeof agentCard.scrollIntoView === "function"
+      ) {
+        agentCard.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }
+    });
+  }
 })();

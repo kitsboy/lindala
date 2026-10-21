@@ -251,12 +251,17 @@
     <p class="footer-note">Cinematographer · Director of Photography</p>
   </footer>
 
-  <!-- AGENT CONTACT (bottom-right) -->
-  <aside class="agent-card" aria-labelledby="agent-card-title">
-    <p class="agent-card-title" id="agent-card-title">Agent Contact</p>
-    <a class="agent-card-link" href="mailto:btorgeson@independentartistgroup.com">
-      <img src="images/agent-contact.png" alt="Brady Torgeson — Partner / SVP Physical Production, Independent Artist Group. P 310-888-4235 · C 626-253-4065 · btorgeson@independentartistgroup.com · 10585 Santa Monica Blvd, Los Angeles, CA 90025" loading="lazy" />
-    </a>
+  <!-- AGENT CONTACT (bottom-right, collapsible) -->
+  <aside class="agent-card is-collapsed" id="agent-card" aria-labelledby="agent-card-title">
+    <button type="button" class="agent-card-toggle" id="agent-card-toggle" aria-expanded="false" aria-controls="agent-card-body">
+      <span class="agent-card-title" id="agent-card-title">Agent Contact</span>
+      <span class="agent-card-chevron" aria-hidden="true"></span>
+    </button>
+    <div class="agent-card-body" id="agent-card-body">
+      <a class="agent-card-link" href="mailto:btorgeson@independentartistgroup.com">
+        <img src="images/agent-contact.png" alt="Brady Torgeson — Partner / SVP Physical Production, Independent Artist Group. P 310-888-4235 · C 626-253-4065 · btorgeson@independentartistgroup.com · 10585 Santa Monica Blvd, Los Angeles, CA 90025" loading="lazy" />
+      </a>
+    </div>
   </aside>
 
   <!-- Lightbox -->
