@@ -763,6 +763,28 @@ button {
   opacity: 0.65;
 }
 
+/* ── 404 ── */
+.notfound {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 8rem 1.5rem 6rem;
+  text-align: center;
+}
+
+.notfound h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--champagne);
+  letter-spacing: 0.03em;
+  margin: 0.5rem 0 1rem;
+}
+
+.notfound p {
+  color: var(--muted);
+  margin: 0 0 2rem;
+}
+
 /* ── Lightbox ── */
 .lightbox {
   position: fixed;

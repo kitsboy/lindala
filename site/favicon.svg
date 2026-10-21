@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RWL">
+  <rect width="64" height="64" fill="#070707"/>
+  <rect x="1.5" y="1.5" width="61" height="61" fill="none" stroke="#e7e2bc" stroke-opacity="0.45"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Cinzel, 'Times New Roman', serif" font-size="21" letter-spacing="1.5" fill="#e7e2bc">RWL</text>
+</svg>
