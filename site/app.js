@@ -157,7 +157,6 @@
     ...$$(".credit-card"),
     ...$$(".reel"),
     ...$$(".about-grid > *"),
-    ...$$(".contact-panel"),
   ];
   revealTargets.forEach((el) => el.classList.add("reveal"));
 
